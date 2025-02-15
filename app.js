@@ -285,3 +285,10 @@ function renumberRows() {
 
 // Muat data dari localStorage saat halaman dimuat
 loadFromLocalStorage();
+
+
+const key = document.querySelector('input')
+
+key.addEventListener('keydown', function(e) {
+  console.log(e.code)
+});
