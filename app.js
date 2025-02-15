@@ -194,7 +194,7 @@
 const form = document.querySelector('form');
 const input = document.querySelector('input');
 const tbody = document.querySelector('tbody');
-let no = 0; // Counter untuk nomor baris
+let no = 1; // Counter untuk nomor baris
 
 // Simpan data tugas ke localStorage
 function saveToLocalStorage() {
