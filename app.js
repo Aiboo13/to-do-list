@@ -240,7 +240,9 @@ function addRow(taskText, isChecked = false, rowNo = null) {
   newTd2.append(newInput, deleteBtn); // Gabungkan checkbox dan tombol hapus
   newTr.append(newTh, newTd, newTd2); // Gabungkan semua elemen ke baris
   tbody.append(newTr); // Tambahkan baris ke tabel
-
+  if (isChecked) {
+    newTd.style.textDecoration = "line-through";
+  }
   // Event listener untuk checkbox
   newInput.addEventListener('change', () => {
     if (newInput.checked) {
@@ -251,6 +253,8 @@ function addRow(taskText, isChecked = false, rowNo = null) {
     saveToLocalStorage(); // Simpan perubahan ke localStorage
   });
 }
+
+
 
 // Event listener untuk form submission
 form.addEventListener('submit', (e) => {
