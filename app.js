@@ -194,7 +194,8 @@
 const form = document.querySelector('form');
 const input = document.querySelector('input');
 const tbody = document.querySelector('tbody');
-let no = 1; // Counter untuk nomor baris
+let no = localStorage.getItem('taskCounter') ? parseInt(localStorage.getItem('taskCounter')) : 1;
+ // Counter untuk nomor baris
 
 // Simpan data tugas ke localStorage
 function saveToLocalStorage() {
@@ -252,7 +253,7 @@ function addRow(taskText, isChecked = false, rowNo = null) {
     }
     saveToLocalStorage(); // Simpan perubahan ke localStorage
   });
-  localStorage.setItem("taskCounter", no)
+  localStorage.setItem('taskCounter', no)
 }
 
 
