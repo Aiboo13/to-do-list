@@ -252,6 +252,7 @@ function addRow(taskText, isChecked = false, rowNo = null) {
     }
     saveToLocalStorage(); // Simpan perubahan ke localStorage
   });
+  localStorage.setItem("taskCounter", no)
 }
 
 
