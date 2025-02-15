@@ -1,3 +1,30 @@
-.Delete{
-  color: rgb(255, 0, 0);
+.Delete {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+td{
+  font-family: 'Times New Roman', Times, serif;
+  color: aliceblue;
+}
+th{
+  font-family: 'Times New Roman', Times, serif;
+  color: aliceblue;
+}
+
+body{
+  background-color: blueviolet;
+}
+
+p{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: aliceblue;
+}
+
+p:hover{
+  color: rgb(255, 145, 0);
+  cursor: pointer;
 }

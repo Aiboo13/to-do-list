@@ -1,7 +1,7 @@
 const form = document.querySelector('form');
 const input = document.querySelector('input');
 const tbody = document.querySelector('tbody');
-let no = 0;
+let no = 1;
 
 
 form.addEventListener('submit', (e) => {
@@ -19,6 +19,7 @@ form.addEventListener('submit', (e) => {
   newTd.innerText = input.value;
 
   deleteBtn.innerText = "Delete";
+  deleteBtn.style.margin= "4%";
   deleteBtn.classList.add('Delete');
 
   newTd2.append(newInput, deleteBtn);
