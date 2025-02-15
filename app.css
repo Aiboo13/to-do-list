@@ -8,15 +8,18 @@
 
 td{
   font-family: 'Times New Roman', Times, serif;
-  color: aliceblue;
+  font-size: x-large;
+  color: rgb(0, 0, 0);
 }
 th{
   font-family: 'Times New Roman', Times, serif;
-  color: aliceblue;
+  font-size: x-large;
+  color: rgb(0, 0, 0);
 }
 
 body{
-  background-color: blueviolet;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Pemandangan_Gunung_Bromo.jpg/2560px-Pemandangan_Gunung_Bromo.jpg);
+  background-attachment: fixed;
 }
 
 p{
@@ -27,4 +30,24 @@ p{
 p:hover{
   color: rgb(255, 145, 0);
   cursor: pointer;
+}
+
+table{
+  background-color: rgba(255, 255, 255, 0.623);
+  border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
+
+}
+
+h1{
+  color: white;
+  background-color: rgba(255, 255, 255, 0.37);
+  border-radius: 4rem;
+  -webkit-border-radius: 4rem;
+  -moz-border-radius: 4rem;
+  -ms-border-radius: 4rem;
+  -o-border-radius: 4rem;
 }
