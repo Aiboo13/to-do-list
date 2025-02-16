@@ -1,4 +1,4 @@
 [
-  { "no": "1", "task": "Tugas 1", "checked": false },
-  { "no": "2", "task": "Tugas 2", "checked": true }
+  { "no": "1", "task": "Tugas 1","edit":"edit1", "checked": false },
+  { "no": "2", "task": "Tugas 2", "edit":"edit2", "checked": true }
 ]
