@@ -18,8 +18,8 @@ th{
 }
 
 body{
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Pemandangan_Gunung_Bromo.jpg/2560px-Pemandangan_Gunung_Bromo.jpg);
-  background-attachment: fixed;
+  background: linear-gradient(to bottom, #434343, #000000);
+
 }
 
 p{
@@ -51,4 +51,8 @@ h1{
   -moz-border-radius: 4rem;
   -ms-border-radius: 4rem;
   -o-border-radius: 4rem;
+}
+
+#task{
+  border-radius: 4rem;
 }
