@@ -1,58 +1,82 @@
 .Delete {
-  background-color: red;
-  color: white;
+  background-color: #e63946;
+  color: #ffffff;
   border: none;
-  padding: 5px 10px;
+  padding: 8px 16px;
   cursor: pointer;
+  border-radius: 8px;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 
-td{
-  font-family: 'Times New Roman', Times, serif;
-  font-size: x-large;
-  color: rgb(0, 0, 0);
-}
-th{
-  font-family: 'Times New Roman', Times, serif;
-  font-size: x-large;
-  color: rgb(0, 0, 0);
+.Delete:hover {
+  background-color: #d00000;
+  transform: translateY(-2px);
 }
 
-body{
-  background: linear-gradient(to bottom, #434343, #000000);
-
+td, th {
+  font-family: 'Georgia', serif;
+  font-size: 18px;
+  color: #1a1a1a;
+  padding: 12px;
+  text-align: center;
 }
 
-p{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: aliceblue;
+table {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+  border-collapse: collapse;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  overflow: hidden;
 }
 
-p:hover{
-  color: rgb(255, 145, 0);
-  cursor: pointer;
+body {
+  background: linear-gradient(to bottom, #2d3436, #000000);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-table{
-  background-color: rgba(255, 255, 255, 0.623);
-  border-radius: 5rem;
-  -webkit-border-radius: 5rem;
-  -moz-border-radius: 5rem;
-  -ms-border-radius: 5rem;
-  -o-border-radius: 5rem;
-
+p {
+  font-family: 'Montserrat', sans-serif;
+  color: #f1faee;
+  font-size: 32px;
+  text-align: center;
+  margin: 20px 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-h1{
-  color: white;
-  background-color: rgba(255, 255, 255, 0.37);
-  width: 20ch;
-  border-radius: 4rem;
-  -webkit-border-radius: 4rem;
-  -moz-border-radius: 4rem;
-  -ms-border-radius: 4rem;
-  -o-border-radius: 4rem;
+h1 {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  margin: 20px auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-#task{
-  border-radius: 4rem;
+#task {
+  border-radius: 12px;
+  padding: 10px;
+  border: 2px solid #dfe6e9;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+#task:focus {
+  border-color: #00e4dd;
+  outline: none;
 }
