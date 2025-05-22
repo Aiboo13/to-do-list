@@ -80,3 +80,198 @@ h1 {
   border-color: #00e4dd;
   outline: none;
 }
+
+
+.Delete {
+  background-color: #e63946;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.Delete:hover {
+  background-color: #d00000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+td, th {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #2c3e50;
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+table {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  border-collapse: separate;
+  border-spacing: 0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  margin: 30px auto;
+  overflow: hidden;
+  width: 90%;
+  max-width: 800px;
+}
+
+body {
+  background: linear-gradient(135deg, #3498db, #8e44ad);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 36px;
+  text-align: center;
+  margin: 30px 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+}
+
+h1 {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: fit-content;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  margin: 30px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+#task {
+  border-radius: 25px;
+  padding: 15px;
+  border: 2px solid #3498db;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#task:focus {
+  border-color: #8e44ad;
+  outline: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.Edit {
+  background-color: #4caf50; /* Warna hijau untuk tombol edit */
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.Edit:hover {
+  background-color: #388e3c; /* Warna hijau lebih gelap saat hover */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.Delete, .Edit {
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 0 5px;
+}
+
+.Delete {
+  background-color: #ff4757;
+  color: #ffffff;
+}
+
+.Delete:hover {
+  background-color: #ff6b81;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 71, 87, 0.4);
+}
+
+.Edit {
+  background-color: #5352ed;
+  color: #ffffff;
+}
+
+.Edit:hover {
+  background-color: #7472ff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(83, 82, 237, 0.4);
+}
+
+.btn-primary {
+  background-color: #2ecc71;
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: #27ae60;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(46, 204, 113, 0.4);
+}
+
+
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  background: linear-gradient(135deg, #3498db, #8e44ad, #2ecc71, #e74c3c);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+}
